@@ -1,1 +1,352 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&family=Heebo:wght@100;300;500;700;900&display=swap");
+body {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body h1 {
+  margin: 0;
+}
+
+body .animation div {
+  background: url("../images/Silhouette_farmhouse.svg") no-repeat center center;
+  background-size: 100%;
+  height: 45px;
+}
+
+@media only screen and (min-width: 720px) {
+  body .animation div {
+    height: 196px;
+  }
+}
+
+body .component {
+  background: #004851;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .component_top-icon {
+  background: url("../images/dark.svg") no-repeat center center;
+  background-size: contain;
+  height: 62px;
+  width: 62px;
+  margin-top: 29px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .component_title {
+  font-family: 'Heebo', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+  margin-top: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    line-height: 51px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 75px;
+  }
+}
+
+body .component_box-img {
+  background: url("../images/7-11-07Trus4374 1.png") no-repeat center center;
+  background-size: contain;
+  height: 267px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_box-img {
+    height: 556px;
+    background-size: 100%;
+    width: 55%;
+  }
+}
+
+body .component_box-content {
+  padding: 23px 18px 23px;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_box-content {
+    padding: 23px 18px 23px 39px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 45%;
+  }
+}
+
+body .component_box-content .title {
+  font-family: 'Heebo', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_box-content .title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+}
+
+body .component_box-content .description {
+  font-family: 'Crimson Pro', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.012em;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_box-content .description {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+body .component_box-content .navigation {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.117em;
+  color: #FFC845;
+  margin-top: 26px;
+}
+
+body .component_box-content .navigation::after {
+  content: " ";
+  background: url("../images/arrow.svg") no-repeat center center;
+  background-size: contain;
+  height: 13px;
+  width: 27px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_stats {
+    margin-top: 113px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_info {
+    margin-top: 80px;
+  }
+}
+
+body .component_stats, body .component_info {
+  padding: 0 56px 0 56px;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_stats, body .component_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+body .component_stats-box {
+  border-top: solid 7px #00aec7;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 26px 0 52px 0;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_stats-box {
+    width: calc(100% / 4);
+  }
+  body .component_stats-box:first-child {
+    margin-right: 20px;
+  }
+  body .component_stats-box:nth-child(2), body .component_stats-box:nth-child(3) {
+    margin: 0 20px;
+  }
+  body .component_stats-box:nth-child(4) {
+    margin-left: 20px;
+  }
+}
+
+body .component_stats-box::before {
+  position: absolute;
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #00aec7;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  top: 0;
+}
+
+body .component_stats-box .title {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.012em;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_stats-box .title {
+    font-size: 50px;
+    line-height: 63px;
+  }
+}
+
+body .component_stats-box .info {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_stats-box .info {
+    font-size: 15px;
+    line-height: 38px;
+  }
+}
+
+body .component_info-box {
+  border-top: solid 5px #f8485e;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_info-box {
+    width: calc(100% / 4);
+  }
+  body .component_info-box:first-child {
+    margin-right: 20px;
+  }
+  body .component_info-box:nth-child(2), body .component_info-box:nth-child(3) {
+    margin: 0 20px;
+  }
+  body .component_info-box:nth-child(4) {
+    margin-left: 20px;
+  }
+}
+
+body .component_info-box::before {
+  position: absolute;
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f8485e;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  top: -25px;
+}
+
+body .component_info-box .image {
+  background: url("../images/rectangle-159.jpg") no-repeat center center;
+  padding-top: calc(141 / 205 * 100%);
+  width: 100%;
+  background-size: contain;
+}
+
+body .component_info-box .content {
+  background-color: #fff;
+  padding: 18px 14px;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_info-box .content {
+    padding: 33px 20px;
+  }
+}
+
+body .component_info-box .content .title {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #373D39;
+}
+
+@media only screen and (min-width: 720px) {
+  body .component_info-box .content .title {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+body .component_info-box .content .arrow {
+  background: url("../images/Union.svg") no-repeat center center;
+  background-size: contain;
+  width: 99px;
+  height: 15px;
+}
+/*# sourceMappingURL=index.css.map */

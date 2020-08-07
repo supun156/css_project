@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&family=Heebo:wght@100;300;500;700;900&display=swap');
+
+$font-family-crimson: 'Crimson Pro',
+serif;
+$font-family-Heebo: 'Heebo',
+sans-serif;
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+
+  h1 {
+    margin: 0;
+  }
+
+  .animation {
+    div {
+      background: url('../images/Silhouette_farmhouse.svg') no-repeat center center;
+      background-size: 100%;
+      height: 45px;
+
+      @media only screen and (min-width: 720px) {
+        height: 196px;
+      }
+    }
+  }
+
+  .container {}
+
+  .component {
+    background: #004851;
+    display: flex;
+    flex-direction: column;
+
+    &_top-icon {
+      background: url('../images/dark.svg') no-repeat center center;
+      background-size: contain;
+      height: 62px;
+      width: 62px;
+      margin-top: 29px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &_title {
+      font-family: 'Heebo', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #FFF;
+      text-align: center;
+      margin-top: 17px;
+      padding-left: 17px;
+      padding-right: 17px;
+
+      @media only screen and (min-width: 720px) {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+        line-height: 51px;
+      }
+    }
+
+    &_box {
+      @media only screen and (min-width: 720px) {
+        display: flex;
+        margin-top: 75px;
+
+      }
+    }
+
+    &_box-img {
+      background: url('../images/7-11-07Trus4374\ 1.png') no-repeat center center;
+      background-size: contain;
+      height: 267px;
+      width: 100%;
+
+      @media only screen and (min-width: 720px) {
+        height: 556px;
+        background-size: 100%;
+        width: 55%;
+      }
+    }
+
+    &_box-content {
+      padding: 23px 18px 23px;
+
+      @media only screen and (min-width: 720px) {
+        padding: 23px 18px 23px 39px;
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+      }
+
+      .title {
+        font-family: 'Heebo', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 36px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+
+        @media only screen and (min-width: 720px) {
+          font-size: 36px;
+          line-height: 47px;
+        }
+      }
+
+      .description {
+        font-family: 'Crimson Pro', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.012em;
+        color: #FFFFFF;
+        margin-top: 15px;
+
+        @media only screen and (min-width: 720px) {
+          font-size: 19px;
+          line-height: 30px;
+        }
+      }
+
+      .navigation {
+        font-family: $font-family-Heebo;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.117em;
+        color: #FFC845;
+        margin-top: 26px;
+
+        &::after {
+          content: " ";
+          background: url('../images/arrow.svg') no-repeat center center;
+          background-size: contain;
+          height: 13px;
+          width: 27px;
+          display: inline-flex;
+        }
+      }
+    }
+
+    &_stats {
+      @media only screen and (min-width: 720px) {
+        margin-top: 113px;
+      }
+    }
+
+    &_info {
+      @media only screen and (min-width: 720px) {
+        margin-top: 80px;
+      }
+    }
+
+    &_stats,
+    &_info {
+      padding: 0 56px 0 56px;
+
+      @media only screen and (min-width: 720px) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &_stats-box {
+      border-top: solid 7px #00aec7;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 26px 0 52px 0;
+
+      @media only screen and (min-width: 720px) {
+        width: calc(100% / 4);
+
+        &:first-child {
+          margin-right: 20px;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin: 0 20px;
+        }
+
+        &:nth-child(4) {
+          margin-left: 20px;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #00aec7;
+        align-self: center;
+        top: 0;
+      }
+
+      .title {
+        font-family: $font-family-Heebo;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        letter-spacing: 0.012em;
+        color: #FFFFFF;
+
+        @media only screen and (min-width: 720px) {
+          font-size: 50px;
+          line-height: 63px;
+        }
+      }
+
+      .info {
+        font-family: $font-family-Heebo;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @media only screen and (min-width: 720px) {
+          font-size: 15px;
+          line-height: 38px;
+        }
+      }
+    }
+
+    &_info-box {
+      border-top: solid 5px #f8485e;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (min-width: 720px) {
+        width: calc(100% / 4);
+
+        &:first-child {
+          margin-right: 20px;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin: 0 20px;
+        }
+
+        &:nth-child(4) {
+          margin-left: 20px;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #f8485e;
+        align-self: center;
+        top: -25px;
+      }
+
+      .image {
+        background: url('../images/rectangle-159.jpg') no-repeat center center;
+        padding-top: calc(141 / 205 * 100%);
+        width: 100%;
+        background-size: contain;
+      }
+
+      .content {
+        background-color: #fff;
+        padding: 18px 14px;
+
+        @media only screen and (min-width: 720px) {
+          padding: 33px 20px;
+      }
+
+        .title {
+          font-family: $font-family-Heebo;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 24px;
+          letter-spacing: 0.03em;
+          color: #373D39;
+
+          @media only screen and (min-width: 720px) {
+            font-size: 19px;
+            line-height: 29px;
+          }
+        }
+
+        .arrow {
+          background: url('../images/Union.svg') no-repeat center center;
+          background-size: contain;
+          width: 99px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
